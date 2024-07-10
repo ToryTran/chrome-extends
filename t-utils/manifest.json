@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "tt-chrome-helper",
+    "description": "Background script improves web surfing",
+    "version": "1.0",
+    "action": {
+      "default_popup": "main.html"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/dantri.js"],
+        "matches": [
+          "https://dantri.com.vn/*"
+        ]
+      }
+    ]
+  }
